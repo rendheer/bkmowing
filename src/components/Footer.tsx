@@ -1,11 +1,9 @@
 import logo from "@/assets/logo.jpg";
-import { Facebook } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61571841825200#", label: "Facebook" },
-  // Add more social links here, e.g.:
-  // { icon: Instagram, href: "https://instagram.com/bkmowing", label: "Instagram" },
-  // { icon: Twitter, href: "https://twitter.com/bkmowing", label: "Twitter" },
+  { icon: Instagram, href: "https://instagram.com/bkmowing", label: "Instagram" },
 ];
 
 const Footer = () => (

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import photo1 from "@/assets/project-photo1.jpg";
 import photo2 from "@/assets/project-photo2.jpg";
 import photo3 from "@/assets/project-photo3.jpg";
@@ -40,6 +42,11 @@ const Gallery = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-12">
+          <Link to="/fullgallery" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+            View Full Gallery <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-import heroImg from "@/assets/project-photo4.jpg";
+import heroImg from "@/assets/project-photo7.jpg";
 import { Phone } from "lucide-react";
 
 const Hero = () => {

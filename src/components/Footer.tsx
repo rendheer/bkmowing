@@ -15,7 +15,7 @@ const Footer = () => (
       </div>
       <div className="flex items-center gap-4">
         {socialLinks.map((s) => (
-          <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${s.label === 'Facebook' ? 'bg-[#1877F2] hover:bg-[#166FE5]' : 'bg-primary-foreground/10 hover:bg-primary-foreground/20'}`}>
+          <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label} className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${s.label === 'Facebook' ? 'bg-[#1877F2] hover:bg-[#166FE5]' : s.label === 'Instagram' ? 'bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] hover:opacity-80' : 'bg-primary-foreground/10 hover:bg-primary-foreground/20'}`}>
             <s.icon className="w-5 h-5 text-white" />
           </a>
         ))}
